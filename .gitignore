@@ -26,6 +26,9 @@ __debug_bin
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Configuration
+conf/*
+
 # Coverage
 cover.html
 cover.out

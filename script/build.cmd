@@ -4,9 +4,12 @@ cd ..
 
 :: Del old data
 IF EXIST bin RMDIR bin /Q /S
-IF EXIST pa.exe DEL pa.exe /Q /S
+IF EXIST pass.exe DEL pass.exe /Q /S
 IF EXIST debug.out DEL debug.out /Q /S
 IF EXIST test.out DEL test.out /Q /S
+
+IF EXIST go.mod DEL go.mod /Q /S
+IF EXIST go.sum DEL go.sum /Q /S
 
 :: Set env variable
 set GOROOT=c:\go
@@ -14,6 +17,8 @@ set GOOS=windows
 
 :: Code format
 go fmt
+
+go mod init github.com/karpovdl/pass
 
 :: Code build x64
 set GOARCH=amd64

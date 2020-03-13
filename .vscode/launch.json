@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "pass run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": [
+                "run",
+                "--port=9000",
+                "--pprof=false",
+                "--pprof_port=9001",
+            ]
+        },
+        {
+            "name": "pass run pprof",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": [
+                "run",
+                "--port=9000",
+                "--pprof=true",
+                "--pprof_port=9001",
+            ]
+        },
+        {
+            "name": "pass run tm",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": [
+                "run",
+                "tm",
+                "--bt=0:A",
+                "--cid=-100",
+                "-m=msg"
+            ]
+        }
+    ]
+}

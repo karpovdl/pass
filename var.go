@@ -9,8 +9,17 @@ const (
 	Endl = "\r\n"
 )
 
+// Resp ...
+type Resp struct {
+	Message string `json:"message"`
+	Error   string `json:"error"`
+}
+
 var (
 	appFs = afero.NewOsFs()
 
-	isPprof bool
+	port int // Server port
+
+	isPprof   bool // Pprof flag
+	pprofPort int  // Pprof server port
 )
