@@ -44,13 +44,20 @@ var (
 
 func telegramReadConfiguration() error {
 	var (
+		path    string
 		file    afero.File
 		conf    telegramConfiguration
 		decoder *json.Decoder
 		err     error
 	)
 
-	if file, err = appFs.Open("conf/telegram.json"); err != nil {
+	path = "conf/telegram.json"
+
+	if ok, err := isExist(path); path == "" || !ok || err != nil {
+		return nil
+	}
+
+	if file, err = appFs.Open(path); err != nil {
 		return err
 	}
 
