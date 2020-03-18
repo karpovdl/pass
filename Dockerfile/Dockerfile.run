@@ -1,0 +1,23 @@
+FROM karpovdl/alpine
+
+MAINTAINER ROLF IT
+
+ENV TZ="Europe/Moscow" \
+### APP ENV
+    PORT="" \
+    PPROF="" \
+    PPROF_PORT=""
+
+RUN addgroup -S pass && adduser -S -G pass pass \
+ && mkdir -p /bin \
+ && chown pass:pass /bin \
+ && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime
+
+COPY pass /bin/pass
+
+CMD /bin/pass run \
+  "$PORT" \
+  "$PPROF" \
+  "$PPROF_PORT"
+
+USER pass
