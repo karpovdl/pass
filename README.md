@@ -1,10 +1,13 @@
 # pass
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&maxAge=86400)](./LICENSE)
-[![codebeat][1]][2]
+[![codebeat][1]][2] [![codefactor][3]][4]
 
-[1]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "Codebeat badge"
+[1]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "Codebeat"
 [2]: https://codebeat.co/projects/github-com-karpovdl-pass-master "Codebeat"
+
+[3]: https://www.codefactor.io/repository/github/karpovdl/pass/badge "CodeFactor"
+[4]: https://www.codefactor.io/repository/github/karpovdl/pass "CodeFactor"
 
 * pass --version, -v
 * pass --help, -h
