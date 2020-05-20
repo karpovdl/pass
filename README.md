@@ -1,6 +1,8 @@
 # pass
 
-[![codebeat][1]][2]
+![][0] [![codebeat][1]][2]
+
+[0]: https://img.shields.io/badge/license-MIT-blue.svg "License"
 
 [1]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "Codebeat badge"
 [2]: https://codebeat.co/projects/github-com-karpovdl-pass-master "Codebeat"
