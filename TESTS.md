@@ -3,7 +3,7 @@
 ## Running Tests
 
 ```
-go test
+go test -v
 ```
 
 ## Benchmarks
