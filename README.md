@@ -1,5 +1,10 @@
 # pass
 
+[![codebeat][1]][2]
+
+[1]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "Codebeat badge"
+[2]: https://codebeat.co/projects/github-com-karpovdl-pass-master "Codebeat"
+
 * pass --version, -v
 * pass --help, -h
 
