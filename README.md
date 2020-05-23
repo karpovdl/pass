@@ -1,13 +1,18 @@
 # pass
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&maxAge=86400)](./LICENSE)
-[![codebeat][1]][2] [![codefactor][3]][4]
+[![License][1]][2] [![golang][10]][11] [![codebeat][20]][21] [![CodeFactor][22]][23] 
 
-[1]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "Codebeat"
-[2]: https://codebeat.co/projects/github-com-karpovdl-pass-master "Codebeat"
+[1]: https://img.shields.io/badge/license-MIT-blue.svg?label=License&maxAge=86400 "License"
+[2]: ./LICENSE
 
-[3]: https://www.codefactor.io/repository/github/karpovdl/pass/badge "CodeFactor"
-[4]: https://www.codefactor.io/repository/github/karpovdl/pass "CodeFactor"
+[10]: https://img.shields.io/badge/golang-1.14.2-blue.svg?style=flat "Golang"
+[11]: https://golang.org
+
+[20]: https://codebeat.co/badges/d7a74a17-b99c-4d59-a07d-20685cf169e4 "CODEBEAT"
+[21]: https://codebeat.co/projects/github-com-karpovdl-pass-master
+
+[22]: https://www.codefactor.io/repository/github/karpovdl/pass/badge "CodeFactor"
+[23]: https://www.codefactor.io/repository/github/karpovdl/pass
 
 * pass --version, -v
 * pass --help, -h
