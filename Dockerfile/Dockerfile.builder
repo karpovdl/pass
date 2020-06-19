@@ -1,22 +1,30 @@
-FROM karpovdl/golang:alpine
+FROM karpovdl/golang:1.14.4-alpine3.12
+
+ARG app_df
+ARG app_version
 
 LABEL author="Denis Karpov" \
       site="github.com/karpovdl" \
       email="karpovdl@hotmail.com" \
-      version="1.0.0" \
-      release-date="2020-03-18"
+      version=${app_version} \
+      release-date="2020-06-18" \
+      alpine="3.12" \
+      golang="1.14.4"
 
 ENV TZ="Europe/Moscow" \
 ### APP SRC
     APP_NAME="github.com/karpovdl/pass" \
     APP_NAME_BRANCH="master" \
-    APP_VERSION="1.0.0"
+    APP_VERSION=${app_version}
 
-COPY /Dockerfile.run $GOPATH/bin/Dockerfile.run
+COPY ${app_df} $GOPATH/bin/Dockerfile.run
 
 CMD export WORK_DIR=$GOPATH/src \
+### FIRST INIT
+ && rm -rf /var/lib/apt/lists/* \
+ && update-ca-certificates \
+### GET APP
  && go get -d $APP_NAME \
-###
  && cd $GOPATH/src/$APP_NAME \
  && git checkout $APP_NAME_BRANCH > null \
  && cd $GOPATH/src \
