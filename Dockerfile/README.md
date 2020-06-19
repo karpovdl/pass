@@ -3,5 +3,5 @@
 ## Sample run
 
 ```
-./run.exec.sh 1.0.0
+./run.exec.sh 1.0.1
 ```

@@ -29,10 +29,10 @@ func main() {
 func initApp() bool {
 	app := cli.App{
 		Name:     "pass",
-		Version:  "v1.0.0.0",
+		Version:  "v1.0.0.1",
 		Compiled: time.Now(),
 		Authors: []*cli.Author{
-			&cli.Author{
+			{
 				Name:  "Denis Karpov",
 				Email: "KarpovDL@hotmail.com",
 			},
@@ -47,7 +47,7 @@ func initApp() bool {
 		UseShortOptionHandling: true,
 
 		Commands: []*cli.Command{
-			&cli.Command{
+			{
 				Name:        "run",
 				Aliases:     []string{"r"},
 				Usage:       "",
