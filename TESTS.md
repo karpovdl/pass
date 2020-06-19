@@ -2,7 +2,7 @@
 
 ## Running Tests
 
-```
+```bash
 go test -v
 ```
 
@@ -10,6 +10,6 @@ go test -v
 
 A benchmark suite can be run as part of the tests:
 
-```
+```bash
 go test -bench .
 ```
