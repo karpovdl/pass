@@ -1,6 +1,6 @@
 :: Script for creating an application cover
 
-cd ..
+cd ../..
 
 :: Del old data
 IF EXIST cover.out DEL cover.out /Q /S

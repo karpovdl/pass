@@ -1,6 +1,6 @@
 :: Script for building an application for Windows
 
-cd ..
+cd ../..
 
 :: Del old data
 IF EXIST bin RMDIR bin /Q /S

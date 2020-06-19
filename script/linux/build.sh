@@ -2,7 +2,7 @@
 
 #Script for building an application for *NIX
 
-cd ..
+cd ../..
 
 git pull --all
 
