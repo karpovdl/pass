@@ -44,6 +44,7 @@ Default: 9001
 * message, m - telegram message
 
 Configuration telegram.json file
+
 ```
 {
     "bot_token": "{BOT_TOKEN}",
@@ -55,12 +56,14 @@ Configuration telegram.json file
 ### sample run
 
 Sample run server without parameters
-```
+
+```bash
 pass.exe run
 ```
 
 Sample run with active pprof
-```
+
+```bash
 pass.exe ^
   "run" ^
   "--port=9000" ^
@@ -69,27 +72,32 @@ pass.exe ^
 ```
 
 Sample pass data to telegram from browser
-```
+
+```http
 http://localhost:9000/tm/?bt={BOT_TOKEN}&cid={CHANNEL_ID}&m={MESSAGE}
 ```
 
 Sample pass data to telegram from browser if exist configuration telegram.json file
-```
+
+```http
 http://localhost:9000/tm/?m={MESSAGE}
 ```
 
 Sample pass data to telegram from curl
-```
+
+```http
 curl -X GET http://localhost:9000/tm/?bt={BOT_TOKEN}&cid={CHANNEL_ID}&m={MESSAGE}
 ```
 
 Sample pass data to telegram from curl if exist configuration telegram.json file
-```
+
+```http
 curl -X GET http://localhost:9000/tm/?m={MESSAGE}
 ```
 
 Sample run application with command for pass data only to telegram
-```
+
+```bash
 pass.exe ^
   "run" ^
   "tm" ^
@@ -99,7 +107,8 @@ pass.exe ^
 ```
 
 Sample run application with command for pass data only to telegram if exist configuration telegram.json file
-```
+
+```bash
 pass.exe ^
   "run" ^
   "tm" ^
