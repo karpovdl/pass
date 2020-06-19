@@ -14,6 +14,9 @@
 [22]: https://www.codefactor.io/repository/github/karpovdl/pass/badge "CodeFactor"
 [23]: https://www.codefactor.io/repository/github/karpovdl/pass
 
+:green_book: [Samples](./SAMPLES.md)
+:green_book: [Tests](./TESTS.md)
+
 * pass --version, -v
 * pass --help, -h
 
